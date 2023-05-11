@@ -1,0 +1,295 @@
+body {
+  background-image: url("./assets/freiheitBackground2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  font-family: "Arial", sans-serif;
+}
+
+section {
+  margin-top: 100px;
+}
+
+.ueberschriften {
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 2px 2px 0px rgb(24, 24, 24);
+  font-size: 40px;
+
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.App {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .App header {
+    text-align: center;
+  }
+
+  .App header img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .App header h1 {
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+
+  .App section h2 {
+    font-size: 2.5rem;
+  }
+}
+
+.landPicture {
+  border-radius: 2%;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.glass-box {
+  background-color: rgba(4, 37, 0, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.788);
+}
+
+.glass-box form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.glass-box label {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.glass-box input,
+.glass-box textarea {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  width: 100%;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 2px solid #ccc;
+}
+
+.glass-box button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.5s ease-in-out;
+  position: relative; /* so that the pseudo-element is positioned relative to the button */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+.glass-box button::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  z-index: -1;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2));
+  border-radius: 8px;
+}
+
+.glass-box button::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  z-index: -1;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.15));
+  border-radius: 8px;
+}
+
+.glass-box button:hover {
+  background-color: #107e13;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3), 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.downloadButton {
+  background-color: #ff0000;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.2s ease-in-out;
+  position: relative; /* so that the pseudo-element is positioned relative to the button */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+.downloadButton::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  z-index: -1;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2));
+  border-radius: 8px;
+}
+
+.downloadButton::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  z-index: -1;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.15));
+  border-radius: 8px;
+}
+
+.downloadButton:hover {
+  background-color: #4CAF50;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3), 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+.GefährdetButton {
+  background-color: #ff5e00;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.OkButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+li {
+  text-align: center;
+  color: #4CAF50;
+  list-style: none;
+  font-size: 25px;
+  text-align: justify;
+  margin-right: 2.5rem;
+}
+
+.wirHoffen {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* Box Shadow */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1%;
+  visibility: visible; /* Hinzugefügt, um das Video sichtbar zu machen */
+}
+
+footer {
+  margin-top: 10px;
+}
+
+ul {
+  border: solid 1px black;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+  background-color: #222222;
+  width: 90%;
+  margin: 0 auto; /* Mittig zentrieren */
+}
+
+p {
+  font-size: 20px;
+  display: block;
+  text-align: justify;
+}
+
+span {
+  color: #4CAF50;
+  font-size: x-large;
+  text-shadow: 2px 2px 0px rgb(24, 24, 24);
+
+}
+
+.spanRot {
+  color: #ff0000;
+  font-size: x-large;
+  text-shadow: 2px 2px 0px rgb(24, 24, 24);
+}
+
+.alkohol-fragen {
+  background-color: #083000a4;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.alkohol-container {
+  margin-top: 2rem;
+}
