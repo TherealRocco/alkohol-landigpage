@@ -3,6 +3,7 @@ import "../src/App.css";
 import ContactSection from "./components/ContactSection";
 import Video from "./components/Video";
 import Alkoholtest from "./components/Alkoholtest";
+import Testimonials from "./components/testeimonials";
 
 function App() {
   const [showTest, setShowTest] = useState(false);
@@ -134,6 +135,14 @@ function App() {
           </button>
         </div>
       </section>
+
+      <section>
+        <div className="glass-box">
+          <h2 className="ueberschriften">Kundenerfahrung</h2>
+          <Testimonials />
+        </div>
+      </section>
+
       <section>
         <div className="glass-box">
           <h2 className="ueberschriften">Wo Sie Hilfe finden können</h2>
